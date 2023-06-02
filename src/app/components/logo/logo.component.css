@@ -1,0 +1,9 @@
+.logo-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+mat-icon{
+    min-height: 100%;
+}

@@ -1,0 +1,184 @@
+.home-wrapper {
+    height: 100vh;
+    width: 100%;
+
+    min-height: 1050px;
+
+    background: linear-gradient(60deg, rgba(71, 176, 131, 1) 4%, rgba(188, 255, 178, 1) 100%);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: .4rem;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.saldo{
+    padding: .90rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.saldo div {
+    text-transform: uppercase;
+    font-size: .8rem;
+    position: absolute;
+    top: 0;
+}
+
+.saldo h1 {
+    letter-spacing: 3px;
+    margin: 3rem 0 0 0;
+}
+
+header{
+    max-height: 50px;
+    color:white ;
+}
+
+header app-logo{
+    transform: scale(.90);
+    max-height: min-content;
+}
+
+header, .titulo{
+    padding: 0rem .25rem;
+}
+
+.setwidth{
+    width: 95%;
+    max-width: 600px;
+}
+
+.main-card{
+    height: 67%;
+    min-height: max-content;
+    border-radius: unset;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.button-nav{
+    margin: 2rem 0;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-nav button{
+    margin: 0;
+    box-shadow: none;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+    color: primary;
+    text-transform: capitalize;
+    font-size: .8rem;
+}
+
+mat-card-content{
+    padding: .15rem 2rem;
+    color: primary;
+}
+
+.registos{
+    margin-top: 1rem;
+}
+
+table{
+    width: 100%;
+    text-align: start;
+    border-collapse: collapse;
+}
+tr, td{
+    border-bottom: 1px solid rgba(50, 50, 50, .20) ;
+    padding: .5rem;
+}
+
+td:last-child{
+    text-align: end;
+}
+
+.dep{
+    color: green;
+}
+
+.lev{
+    color: red;
+}
+
+.novo-plano{
+    cursor:pointer;
+    margin-top: .5rem;
+    background-color: lightgray;
+    color: gray;
+    text-transform: capitalize;
+    width: max-content;
+}
+
+.novo-plano mat-card-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.novo-plano mat-card-content h3{
+    margin: 0;
+}
+
+.titulos-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulos-card a{
+    color: green;
+    margin-top: 1rem;
+}
+
+.titulos-card a:hover{
+    cursor: pointer;
+} 
+
+mat-card-subtitle{
+    color: rgba(200, 250, 200, 1);
+}
+
+.funcoes{
+    margin-top: 1rem;
+    background-color: teal;
+}
+
+form{
+    margin-top: 2rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+mat-form-field{
+    width: 100%;
+}
+
+@media (max-width: 400px){
+    
+}

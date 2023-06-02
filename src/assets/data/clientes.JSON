@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "nome": "André Rafael",
+        "email": "andre@email.com",
+        "password": "1234",
+        "saldo": 700,
+        "iban": "pt50 1234 4321 12345678901 72",
+        "movimentos": [
+            {"transacao": "deposito", "valor": 50, "data": "5-05-2022"},
+            {"transacao": "levantamento", "valor": 150, "data": "10-05-2022"},
+            {"transacao": "levantamento", "valor": 10, "data": "5-05-2022"},
+            {"transacao": "deposito", "valor": 150, "data": "31-04-2022"},
+            {"transacao": "deposito", "valor": 22.50, "data": "1-05-2023"}
+        ]
+    },
+    {
+        "id": 2,
+        "nome": "Susana Queiroz",
+        "email": "susana@email.com",
+        "password": "1234",
+        "saldo": 1500,
+        "iban": "pt50 1234 4321 12345678901 72",
+        "movimentos": [
+            {"transacao": "levantamento", "valor": 50, "data": "5-05-2022"},
+            {"transacao": "deposito", "valor": 150, "data": "10-05-2022"},
+            {"transacao": "levantamento", "valor": 10, "data": "5-05-2022"},
+            {"transacao": "deposito", "valor": 150, "data": "31-04-2022"},
+            {"transacao": "levantamento", "valor": 22.50, "data": "1-05-2023"}
+        ]
+    },
+    {
+        "id": 3,
+        "nome": "João Dos Santos",
+        "email": "joao@email.com",
+        "password": "1234",
+        "saldo": 315.1,
+        "iban": "pt50 1234 4321 12345678901 72",
+        "movimentos": [
+            {"transacao": "levantamento", "valor": 50, "data": "5-05-2022"},
+            {"transacao": "levantamento", "valor": 150, "data": "10-05-2022"},
+            {"transacao": "levantamento", "valor": 10, "data": "5-05-2022"},
+            {"transacao": "deposito", "valor": 150, "data": "31-04-2022"},
+            {"transacao": "deposito", "valor": 22.50, "data": "1-05-2023"}
+        ]
+    }
+]

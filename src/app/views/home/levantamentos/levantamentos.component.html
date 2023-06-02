@@ -1,0 +1,33 @@
+<mat-divider></mat-divider>
+<mat-card-content>
+    <div>
+        <mat-card class="funcoes"> 
+            <mat-card-content class="shadow">
+                <h1>
+                    Levantamentos
+                </h1>
+            </mat-card-content>
+        </mat-card>
+        <div *ngIf="alerta" class="alerta">
+            <p>Erro! fundos insuficientes</p>
+            <button (click)="turnOff()">X</button>
+        </div>
+        <form id="myForm" (ngSubmit)="levantar(valor.value)">
+            <mat-form-field>
+                <mat-label>Entidade</mat-label>
+                <input matInput value="12345" readonly="readonly">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Referencia</mat-label>
+                <input matInput value="12345789" readonly="readonly">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Valor a Levantar</mat-label>
+                <input matInput #valor required="required">
+            </mat-form-field>
+            <button type="submit" mat-flat-button color="primary">Submeter</button>
+        </form>
+        
+        
+    </div>
+</mat-card-content>

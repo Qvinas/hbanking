@@ -1,0 +1,24 @@
+<mat-divider></mat-divider>
+<mat-card-content>
+    <div>
+        <mat-card class="funcoes">
+            <mat-card-content class="shadow">
+                <h1>
+                    Depositos
+                </h1>
+            </mat-card-content>
+        </mat-card>
+
+        <form id="myForm" (ngSubmit)="depositar(valor.value)">
+            <mat-form-field>
+                <mat-label>conta</mat-label>
+                <input matInput value="PT50 1234 4321 12345678901 72" readonly="readonly">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Valor a Depositar</mat-label>
+                <input matInput #valor required="required">
+            </mat-form-field>
+            <button mat-flat-button color="primary">Submeter</button>
+        </form>
+    </div>
+</mat-card-content>

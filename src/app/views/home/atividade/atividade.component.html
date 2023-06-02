@@ -1,0 +1,20 @@
+<mat-divider></mat-divider>
+<mat-card-content>
+    <mat-card class="funcoes">
+        <mat-card-content class="shadow">
+            <h1>
+                Registos de Atividade
+            </h1>
+        </mat-card-content>
+    </mat-card>
+    <table class="registos">
+        <tr *ngFor="let m of movimentos">
+            <td [ngClass]="m.transacao === 'levantamento' ? 'lev' : 'dep'">
+                <mat-icon>radio_button_checked</mat-icon>
+            </td>
+            <td>{{m.data}}</td>
+            <td>{{m.transacao === "levantamento" ? "Levantamento de " : "Deposito de "}}{{m.valor | currency:
+                "EUR"}}</td>
+        </tr>
+    </table>
+</mat-card-content>

@@ -1,0 +1,60 @@
+<div class="home-wrapper">
+
+    <header class="setwidth">
+        <app-logo></app-logo>
+        <button>
+            <mat-icon>
+                exit_to_app
+            </mat-icon>
+        </button>
+    </header>
+
+    <div class="titulo setwidth">
+        <h1 class="shadow">Olá {{cliente.nome}}</h1>
+        
+        <mat-card class="background">
+            <mat-card-header class="shadow saldo">
+                <div>
+                    <h3>
+                        SALDO CONTA À ORDEM:
+                    </h3>
+                    <h3>{{iban}}</h3>
+                </div>
+                <span class="spacer"></span>
+                <h1>
+                    {{ cliente.saldo | currency: "EUR"}}
+                </h1>
+            </mat-card-header>
+        </mat-card>
+    </div>
+
+    <mat-card class="main-card setwidth">
+        <div class="button-nav">
+            <section>
+                <button (click)="irPara('/')" mat-fab color="primary">
+                    <mat-icon>home</mat-icon>
+                </button>
+                <label>home</label>
+            </section>
+            <section>
+                <button (click)="irPara('/levantamentos')" mat-fab color="primary">
+                    <mat-icon>euro_symbol</mat-icon>
+                </button>
+                <label>levantamentos</label>
+            </section>
+            <section>
+                <button (click)="irPara('/depositos')" mat-fab color="primary">
+                    <mat-icon>swap_horiz</mat-icon>
+                </button>
+                <label>Depositos</label>
+            </section>
+            <section>
+                <button (click)="irPara('/atividade')" mat-fab color="primary">
+                    <mat-icon>view_list</mat-icon>
+                </button>
+                <label>Registos</label>
+            </section>
+        </div>  
+        <router-outlet></router-outlet>
+    </mat-card>
+</div>

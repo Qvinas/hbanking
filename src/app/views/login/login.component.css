@@ -1,0 +1,38 @@
+.login-wrapper{
+    height: 100%;
+    width: 100%;
+    
+    min-height: 500px;
+
+    background: linear-gradient(60deg, rgba(71, 176, 131, 1) 4%, rgba(188, 255, 178, 1) 100%);
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+mat-card{
+    width: 95%;
+    max-width: 400px;
+}
+
+mat-card-header{
+    text-align: center !important;
+}
+
+form{
+    margin-top: 1rem;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+mat-form-field{
+    min-width: 60%;
+}
