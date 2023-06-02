@@ -3,7 +3,7 @@
 <mat-card-content>
     <div class="titulos-card">
         <h4>Atividade Recente:</h4>
-        <a>Ver Mais</a>
+        <a (click)="irPara('/atividade')">Ver Mais</a>
     </div>
     <table>
         <tr *ngFor="let m of movimentosMain">

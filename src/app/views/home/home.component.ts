@@ -40,6 +40,8 @@ export class HomeComponent {
     })
   } 
 
+  isCollapsed = false;
+
   irPara(rota:string){
     this.clienteService.setCliente(this.cliente)
     this.router.navigate(["home/" + this.id + rota])

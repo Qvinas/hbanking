@@ -1,6 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 import { ClientesService } from 'src/app/services/clientes.service';
 
 @Component({
@@ -8,13 +7,12 @@ import { ClientesService } from 'src/app/services/clientes.service';
   styleUrls: ['../home.component.css']
 })
 export class MainComponent {
-  constructor(private clienteSer: ClientesService) { }
+  constructor(private clienteSer: ClientesService, private router: Router) { }
 
   cliente: any;
   clientes: any;
   movimentosMain: any;
   movimentos: any;
-
 
   ngOnInit(): void {
     this.cliente = this.clienteSer.getCliente();
@@ -30,5 +28,10 @@ export class MainComponent {
     }
 
     return movimentosMain
+  }
+
+  irPara(rota: string) {
+    this.clienteSer.setCliente(this.cliente)
+    this.router.navigate(["home/" + this.cliente["id"] + rota])
   }
 }
